@@ -1,20 +1,20 @@
 h2
 {
     background-color: black;
-    color: #1AE1EB;
-    text-align: center;
-    font-size: 1.2em;
     border: 2px solid black;
+    color: #1AE1EB;
+    font-size: 1.2em;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h3
 {
     font-size: 1.2em;
+    font-weight: bold;
     margin: 0;
     padding: 5px;
-    font-weight: bold;
 }
 
 @media screen and (max-width: 1024px)
@@ -29,7 +29,7 @@ h3
     }
 }
 
-#CV
+.CV
 {
     display: flex;
     flex-direction: row;
@@ -37,11 +37,11 @@ h3
 
 .gauche
 {
+    background-color: #1AE1EB;
     display: flex;
     flex-direction: column;
-    background-color: #1AE1EB;
-    width: 30%; 
     height: 1250px;
+    width: 30%; 
 }
 
 @media screen and (max-width: 1024px)
@@ -50,7 +50,7 @@ h3
     {
         width: 100%; 
     }
-    #CV
+    .CV
     {
         flex-direction: column-reverse;
     }
@@ -58,11 +58,11 @@ h3
 
 .photo
 {
-    height: 300px;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 300px;
     justify-content: center;
-    align-items: center;
 }
 
 .photoYMR
@@ -73,12 +73,13 @@ h3
 
 .contact
 {
-    height: 250px;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 250px;
     justify-content: space-around;
-    align-items: center;
 }
+
 @media screen and (max-width: 1024px)
 {
     .contact
@@ -95,39 +96,38 @@ h3
 
 .propos
 {
-    font-size: 0.8em;
-    width: 90%;
-    height: 550px;
+    align-self: center;
     display: flex;
     flex-direction: column;
+    font-size: 0.8em;
+    height: 550px;
     justify-content: flex-start;    
-    align-self: center;
+    width: 90%;
 }
-
 
 .loisirs
 {
-    height: 200px;
+    align-items: center;
     display: flex;
     flex-direction: row;
+    height: 200px;
     justify-content: space-around;
-    align-items: center;
 }
 
 .icone
 {
-    padding: 15px;
     border: 1px solid black;
     border-radius: 100px 100px;
+    padding: 15px;
 }
 
 .droite
 {
-    width: 70%; 
-    height: 1500px;
+    align-items: center;    
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    height: 2100px;
+    width: 70%; 
 }
 
 @media screen and (max-width: 1024px)
@@ -145,9 +145,9 @@ h3
 
 header
 {
-    height: 300px;
     display: flex;
     flex-direction: column;
+    height: 300px;
     justify-content: center;
 }
 
@@ -187,35 +187,35 @@ header
 
 .rubrique
 {
+    align-items: baseline;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
 }
 
 .picto
 {
-    width: 45px; 
     color: #1AE1EB;
+    width: 45px; 
 }
 
 .conteneur_puce
 {
-    width: 20px;
-    height:12px;
+    align-items: flex-end;
+    color: #1AE1EB;
     display: flex;
     flex-direction: row;
+    height:12px;
     justify-content: flex-start;
-    align-items: flex-end;
-    color: #1AE1EB
-}
+    width: 20px;
+ }
 
 .puce
 {
-    width: 4px;
-    height: 4px;
     background-color: #1AE1EB;
     border: 1px solid  #1AE1EB;
     border-radius: 2px 2px;
+    height: 4px;
+    width: 4px;
 }
 
 .item_majeur
@@ -234,16 +234,16 @@ header
     
 .date
 {
+    display: flex;
     font-size: 0.8em;
     width: 35%; 
-    display: flex;
 }
 
 .ecole
 {
-    width: 65%; 
     display: flex;
     flex-direction: column;
+    width: 65%; 
 } 
  
 .entreprise
@@ -264,8 +264,8 @@ footer
 
 .recommandation
 {
-    width: 50%; 
     font-size: 0.8em;
+    width: 50%; 
 }
 
 .mail
@@ -276,36 +276,44 @@ footer
 
 @media screen and (max-width: 1024px)
 {
+    .prenom
+    {
+        font-size: 3.0em;    
+    }
+    .nom
+    {
+        font-size: 3.0em;
+    }
     .coordonnee
     {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
     .propos
     {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
     .metier
     {
-        font-size: 1.6em;
+        font-size: 1.9em;
     }
     .date
     {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
     .entreprise
     {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     .complement
     {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
     .recommandation
     {
-        font-size: 1.1m;
+        font-size: 1.4em;
     }
     .mail
     {
-        font-size: 1.0em;
+        font-size: 1.2em;
     }
 }   
