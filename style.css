@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 h2
 {
     background-color: black;
@@ -40,8 +44,8 @@ h3
     background-color: #1AE1EB;
     display: flex;
     flex-direction: column;
-    height: 1250px;
     width: 30%; 
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 1024px)
@@ -100,9 +104,10 @@ h3
     display: flex;
     flex-direction: column;
     font-size: 0.8em;
-    height: 550px;
     justify-content: flex-start;    
     width: 90%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .loisirs
@@ -126,7 +131,6 @@ h3
     align-items: center;    
     display: flex;
     flex-direction: column;
-    height: 2100px;
     width: 70%; 
 }
 
@@ -260,6 +264,7 @@ footer
 {
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }   
 
 .recommandation
